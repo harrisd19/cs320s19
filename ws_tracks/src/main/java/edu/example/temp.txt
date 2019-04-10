@@ -1,0 +1,3 @@
+GsonBuilder gsonBuilder = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting();
+
+Gson gson = gsonBuilder.create();
