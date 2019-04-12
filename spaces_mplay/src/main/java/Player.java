@@ -133,9 +133,9 @@ public class Player implements Serializable {
         else {
             shrink();
             location.add(velocity);
-            if (location.getY() < radius || location.getY() >= World.HEIGHT - Game.TITLE_HEIGHT - radius)
+            if (location.getY() < 2 * radius || location.getY() >= World.HEIGHT - Game.TITLE_HEIGHT - 2 * radius)
                 reverseY();
-            else if (location.getX() < radius || location.getX() >= World.WIDTH - radius)
+            else if (location.getX() < 2 * radius || location.getX() >= World.WIDTH - 2 * radius)
                 reverseX();
         }
     }
