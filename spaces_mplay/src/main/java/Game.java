@@ -5,6 +5,7 @@
  * Your name(s):
  */
 
+import com.gigaspaces.query.IdQuery;
 import org.openspaces.core.GigaSpace;
 import org.openspaces.core.GigaSpaceConfigurer;
 import org.openspaces.core.space.UrlSpaceConfigurer;
@@ -76,7 +77,8 @@ public class Game extends JFrame implements MouseListener, WindowListener {
     }
 
     public void windowClosing(WindowEvent e) {
-        space.take(localPlayer);
+        System.out.println("Windows closing called!");
+        space.takeById(Player.class, localPlayer.getName());
         System.exit(1);
     }
 
