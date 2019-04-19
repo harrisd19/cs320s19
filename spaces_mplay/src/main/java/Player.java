@@ -9,26 +9,19 @@ import com.gigaspaces.annotation.pojo.SpaceId;
 import java.awt.*;
 import java.io.Serializable;
 
-public class Player implements Serializable {
+public class Player extends Entity {
 
     private String  name;
-    private Vector  location;
-    private Vector  velocity;
     private Color   color;
-    private Integer radius;
     private Boolean alive;
-
-    public static  final Integer MIN_RADIUS = 7;
-    private static  final Integer MAX_RADIUS = 5 * MIN_RADIUS;
 
     public Player() {}
 
     public Player(String name, Vector location, Vector velocity, Color color) {
+        super(location, velocity);
         this.name = name;
-        this.location = location;
-        this.velocity = velocity;
         this.color = color;
-        radius = MIN_RADIUS;
+        this.radius = MIN_RADIUS;
         alive = true;
     }
 
@@ -41,36 +34,12 @@ public class Player implements Serializable {
         this.name = name;
     }
 
-    public Vector getLocation() {
-        return location;
-    }
-
-    public void setLocation(final Vector location) {
-        this.location = location;
-    }
-
-    public Vector getVelocity() {
-        return velocity;
-    }
-
-    public void setVelocity(final Vector velocity) {
-        this.velocity = velocity;
-    }
-
     public Color getColor() {
         return color;
     }
 
     public void setColor(final Color color) {
         this.color = color;
-    }
-
-    public Integer getRadius() {
-        return radius;
-    }
-
-    public void setRadius(final Integer radius) {
-        this.radius = radius;
     }
 
     public Boolean isAlive() {
@@ -97,16 +66,6 @@ public class Player implements Serializable {
         velocity.multiply(-1, 1);
     }
 
-    synchronized public void rotate(double angle) {
-        int lengthBefore = velocity.getLength();
-        double angleRadians = Math.toRadians(angle);
-        int x2 = (int) (Math.cos(angleRadians) * velocity.getX() - Math.sin(angleRadians) * velocity.getY());
-        int y2 = (int) (Math.sin(angleRadians) * velocity.getX() + Math.cos(angleRadians) * velocity.getY());
-        velocity = new Vector(x2, y2);
-        while (velocity.getLength() < lengthBefore)
-            velocity.enlarge();
-    }
-
     public void grow() {
         if (radius + 1 <= MAX_RADIUS)
             radius++;
@@ -117,7 +76,7 @@ public class Player implements Serializable {
             radius--;
     }
 
-    public void colisionDetection(final Player other) {
+    public void colisionDetection(final Entity other) {
         double distance = Math.sqrt(Math.pow(location.getX() - other.getLocation().getX(), 2.) + Math.pow(location.getY() - other.getLocation().getY(), 2.));
         if (distance < radius + other.getRadius()) {
             if (radius < other.getRadius())
@@ -132,11 +91,7 @@ public class Player implements Serializable {
             grow();
         else {
             shrink();
-            location.add(velocity);
-            if (location.getY() < 2 * radius || location.getY() >= World.HEIGHT - Game.TITLE_HEIGHT - 2 * radius)
-                reverseY();
-            else if (location.getX() < 2 * radius || location.getX() >= World.WIDTH - 2 * radius)
-                reverseX();
+            super.update();
         }
     }
 

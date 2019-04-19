@@ -15,21 +15,21 @@ public class World extends JPanel {
 
     public static final int WIDTH  = 800;
     public static final int HEIGHT = 600;
-    private Player players[];
+    private Entity entities[];
 
     World() throws IOException {
         setBackground(Color.WHITE);
-        players = null;
+        entities = null;
     }
 
-    void setPlayers(Player players[]) {
-        this.players = players;
+    void setEntities(Entity entitites[]) {
+        this.entities = entitites;
     }
 
     @Override
     synchronized public void paintComponent(Graphics g) {
-        if (players != null)
-            for (Player player: players)
-                player.paint(g);
+        if (entities != null)
+            for (Entity entity: entities)
+                entity.paint(g);
     }
 }

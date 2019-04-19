@@ -23,16 +23,17 @@ public class Game extends JFrame implements MouseListener, WindowListener {
     static final int    VELOCITY      = 15;
 
     private World        world;
-    private Player       localPlayer;
+    private Entity       entity;
     private GigaSpace    space;
 
-    Game(final Player localPlayer) throws IOException {
-        this.localPlayer = localPlayer;
+    Game(final Entity entity) throws IOException {
+        this.entity = entity;
         setTitle(TITLE);
         setSize(World.WIDTH, World.HEIGHT + TITLE_HEIGHT);
         world = new World();
         setContentPane(world);
-        addMouseListener(this);
+        if (entity instanceof Player)
+            addMouseListener(this);
         addWindowListener(this);
         setVisible(true);
 
@@ -42,18 +43,20 @@ public class Game extends JFrame implements MouseListener, WindowListener {
     }
 
     public void mouseClicked(MouseEvent e) {
-        if (!localPlayer.isAlive())
-            return;
-        if (e.getClickCount() > 1) {
-            if (localPlayer.isStopped())
-                localPlayer.setVelocity(new Vector(VELOCITY, VELOCITY));
+        if (entity instanceof Player) {
+            Player localPlayer = (Player) entity;
+            if (!localPlayer.isAlive())
+                return;
+            if (e.getClickCount() > 1) {
+                if (localPlayer.isStopped())
+                    localPlayer.setVelocity(new Vector(VELOCITY, VELOCITY));
+                else
+                    localPlayer.setVelocity(new Vector());
+            } else if ((e.getModifiersEx() & CTRL_DOWN_MASK) == CTRL_DOWN_MASK)
+                localPlayer.rotate(-45);
             else
-                localPlayer.setVelocity(new Vector());
+                localPlayer.rotate(45);
         }
-        else if ((e.getModifiersEx() & CTRL_DOWN_MASK) == CTRL_DOWN_MASK)
-            localPlayer.rotate(-45);
-        else
-            localPlayer.rotate(45);
     }
 
     public void mousePressed(MouseEvent e) {
@@ -78,7 +81,10 @@ public class Game extends JFrame implements MouseListener, WindowListener {
 
     public void windowClosing(WindowEvent e) {
         System.out.println("Windows closing called!");
-        space.takeById(Player.class, localPlayer.getName());
+        if (entity instanceof Player)
+            space.takeById(Player.class, ((Player) entity).getName());
+        else
+            space.takeById(FlyingSaucer.class, ((FlyingSaucer) entity).getId());
         System.exit(1);
     }
 
@@ -106,19 +112,45 @@ public class Game extends JFrame implements MouseListener, WindowListener {
     //  update the local player and write the object into the space;
     //  finally, repaint the world, sleeping for GUI_REFRESH_TIME after repaint
     void run() {
-        while (true) {
-            Player players[] = space.readMultiple(new Player());
-            world.setPlayers(players);
-            for (Player other: players)
-                if (!localPlayer.equals(other))
-                        localPlayer.colisionDetection(other);
-            localPlayer.update();
-            space.write(localPlayer);
-            world.repaint();
-            try {
-                Thread.sleep(Configuration.GUI_REFRESH_TIME);
+        if (entity instanceof Player) {
+            Player localPlayer = (Player) entity;
+            while (true) {
+                // get all players
+                Player players[] = space.readMultiple(new Player());
+                for (Player player : players)
+                    if (!localPlayer.equals(player))
+                        localPlayer.colisionDetection(player);
+                // get all flying saucers
+                FlyingSaucer flyingSaucers[] = space.readMultiple(new FlyingSaucer());
+                for (FlyingSaucer flyingSaucer : flyingSaucers)
+                    localPlayer.colisionDetection(flyingSaucer);
+                // setting the world's entities
+                Entity entities[] = new Entity[players.length + flyingSaucers.length];
+                int i = 0;
+                for (i = 0; i < players.length; i++)
+                    entities[i] = players[i];
+                for (int j = 0; j < flyingSaucers.length; j++)
+                    entities[i++] = flyingSaucers[j];
+                world.setEntities(entities);
+                // update local player
+                localPlayer.update();
+                space.write(localPlayer);
+                // repaint world and sleep
+                world.repaint();
+                try {
+                    Thread.sleep(Configuration.GUI_REFRESH_TIME);
+                } catch (InterruptedException ex) {
+                }
             }
-            catch (InterruptedException ex) {
+        } else {
+            while (true) {
+                FlyingSaucer flyingSaucer = (FlyingSaucer) entity;
+                flyingSaucer.update();
+                space.write(flyingSaucer);
+                try {
+                    Thread.sleep(Configuration.GUI_REFRESH_TIME);
+                } catch (InterruptedException ex) {
+                }
             }
         }
     }
@@ -133,9 +165,14 @@ public class Game extends JFrame implements MouseListener, WindowListener {
         int x = r.nextInt(World.WIDTH);
         int y = r.nextInt(World.HEIGHT);
         Vector location = new Vector(x, y);
-        Color color = new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255));
-        Player player = new Player(name, location, new Vector(), color);
-        Game game = new Game(player);
+        Entity entity = null;
+        if (name.equals("saucer"))
+            entity = new FlyingSaucer(location, new Vector(r.nextInt(21) - 10, r.nextInt(21) - 10));
+        else {
+            Color color = new Color(r.nextInt(255), r.nextInt(255), r.nextInt(255));
+            entity = new Player(name, location, new Vector(), color);
+        }
+        Game game = new Game(entity);
         game.run();
     }
 }

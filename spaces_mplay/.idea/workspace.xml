@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dfe2b6-9455-47f0-add3-3210ce85ee11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spaces_auction/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spaces_auction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spaces_auction/src/main/java/AuctionMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spaces_auction/src/main/java/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spaces_auction/src/main/java/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spaces_auction/src/main/java/Scooter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FlyingSaucer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/World.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="45">
+              <caret line="8" selection-start-line="8" selection-end-line="11" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -25,8 +39,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="391">
+              <caret line="97" column="33" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#4662#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1340#1341#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#1506#1507#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FlyingSaucer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#203#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,13 +88,38 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+            <state relative-caret-position="180">
+              <caret line="26" column="23" selection-start-line="26" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="23" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -50,11 +129,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/World.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FlyingSaucer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="9" />
     <option name="y" value="23" />
     <option name="width" value="1819" />
@@ -100,7 +182,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555096890884" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555342367878" />
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RunDashboard">
@@ -115,32 +197,52 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Game Disease">
-    <configuration name="Game Disease" type="Application" factoryName="Application">
+  <component name="RunManager" selected="Application.Game spiderman">
+    <configuration name="Game Saucer #2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Game" />
       <module name="javaspacesmplay" />
-      <option name="PROGRAM_PARAMETERS" value="Disease" />
+      <option name="PROGRAM_PARAMETERS" value="saucer" />
       <option name="VM_PARAMETERS" value="-Dcom.gs.multicast.enabled=false" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Game Saucer #3" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Game" />
       <module name="javaspacesmplay" />
-      <option name="PROGRAM_PARAMETERS" value="SuperMan" />
+      <option name="PROGRAM_PARAMETERS" value="saucer" />
       <option name="VM_PARAMETERS" value="-Dcom.gs.multicast.enabled=false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Game Saucer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Game" />
+      <module name="javaspacesmplay" />
+      <option name="PROGRAM_PARAMETERS" value="saucer" />
+      <option name="VM_PARAMETERS" value="-Dcom.gs.multicast.enabled=false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Game spiderman" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Game" />
+      <module name="javaspacesmplay" />
+      <option name="PROGRAM_PARAMETERS" value="spiderman" />
+      <option name="VM_PARAMETERS" value="-Dcom.gs.multicast.enabled=false -Djava.net.preferIPv4Stack=true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Game Disease" />
-      <item itemvalue="Application.Game" />
+      <item itemvalue="Application.Game Saucer" />
+      <item itemvalue="Application.Game Saucer #2" />
+      <item itemvalue="Application.Game Saucer #3" />
+      <item itemvalue="Application.Game spiderman" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Game" />
+        <item itemvalue="Application.Game spiderman" />
       </list>
     </recent_temporary>
   </component>
@@ -166,15 +268,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16601013" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16601013" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32992035" />
+      <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32992035" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17178611" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -190,24 +292,74 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Configuration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+        <state relative-caret-position="275">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#4662#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="391">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FlyingSaucer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#203#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" selection-start-line="8" selection-end-line="11" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+        <state relative-caret-position="180">
+          <caret line="26" column="23" selection-start-line="26" selection-end-line="27" />
         </state>
       </provider>
     </entry>
