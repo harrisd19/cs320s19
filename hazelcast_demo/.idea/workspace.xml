@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2bc67c0-2386-4b52-a663-27ac8b3ec3f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hazelcast_demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazelcast_demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazelcast_demo/src/main/java/HelloHazelcast.java" afterDir="false" />
+    <list default="true" id="822e3a1f-7dd9-41db-99af-7ca38fac0683" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HelloHazelcast.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jms_spaces_demo/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jms_spaces_demo/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jms_spaces_demo/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jms_spaces_demo/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jms_spaces_demo/jms_spaces_demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jms_spaces_demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BulkRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mcached_demo/src/main/java/BulkRead.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloMemcached.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloMemcached.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mcached_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcached_demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mcached_demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcached_demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mcached_demo/src/main/java/HelloMemcached.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mcached_demo/src/main/java/HelloMemcached.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spaces_auction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_auction/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spaces_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_demo/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -29,44 +29,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/HelloMemcached.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/HelloHazelcast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="29" column="46" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="46" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/BulkRead.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -86,10 +65,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BulkRead.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/HelloMemcached.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HelloHazelcast.java" />
       </list>
     </option>
   </component>
@@ -103,8 +80,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="1701" />
-    <option name="height" value="889" />
+    <option name="width" value="80" />
+    <option name="height" value="22" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,26 +93,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="mcached_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mcached_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="hazelcast_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hazelcast_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mcached_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mcached_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="hazelcast_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hazelcast_demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="mcached_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mcached_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcached_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mcached_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="hazelcast_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hazelcast_demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,7 +116,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555945335845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555939450006" />
     <property name="settings.editor.selected.configurable" value="application.passwordSafe" />
   </component>
   <component name="RunDashboard">
@@ -161,25 +131,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BulkRead">
-    <configuration name="BulkRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BulkRead" />
-      <module name="mcached_demo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloMemcached" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloMemcached" />
-      <module name="mcached_demo" />
+  <component name="RunManager">
+    <configuration name="HelloHazelcast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HelloHazelcast" />
+      <module name="hazelcast_demo" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BulkRead" />
-        <item itemvalue="Application.HelloMemcached" />
+        <item itemvalue="Application.HelloHazelcast" />
       </list>
     </recent_temporary>
   </component>
@@ -188,19 +150,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d2bc67c0-2386-4b52-a663-27ac8b3ec3f1" name="Default Changelist" comment="" />
-      <created>1555625821765</created>
+      <changelist id="822e3a1f-7dd9-41db-99af-7ca38fac0683" name="Default Changelist" comment="" />
+      <created>1555789432132</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555625821765</updated>
+      <updated>1555789432132</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1701" height="889" extended-state="0" />
+    <frame x="-1" y="23" width="80" height="22" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20072332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="1.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -209,7 +171,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14429109" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4005682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -217,7 +179,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32873276" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32954547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -229,37 +191,20 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/HelloHazelcast.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HelloMemcached.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BulkRead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>

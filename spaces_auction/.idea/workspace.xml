@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cc3e569-74ca-43c9-86a0-fe913af004a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/mcached_demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/src/main/java/HelloMemcached.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/src/main/java/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AuctionMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Bid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scooter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/spaces_demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_mplay/src/main/java/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_mplay/src/main/java/FlyingSaucer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/src/main/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/src/main/java/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/src/main/java/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/target/classes/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/target/classes/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/target/classes/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_mplay/target/classes/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_mplay/target/classes/World.class" afterDir="false" />
-    </list>
+    <list default="true" id="3cc3e569-74ca-43c9-86a0-fe913af004a9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,7 +36,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AuctionMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
+            <state relative-caret-position="870">
               <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -284,7 +252,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43994415" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43994415" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +319,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AuctionMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
+        <state relative-caret-position="870">
           <caret line="58" column="66" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />

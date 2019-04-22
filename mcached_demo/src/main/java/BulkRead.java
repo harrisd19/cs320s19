@@ -8,16 +8,19 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
-public class HelloMemcached {
+public class BulkRead {
 
     private MemcachedClient mc;
     static final String HOST = "localhost";
-    static final int    PORT = 11211;  // specific to memcached
+    static final int    PORT = 11211;
     static final int    NO_EXPIRATION = 0;
+    static final int    TOTAL_MESSAGES = 10;
 
-    HelloMemcached() throws IOException {
+    BulkRead() throws IOException {
         ConnectionFactoryBuilder builder = new ConnectionFactoryBuilder();
         builder.setProtocol(ConnectionFactoryBuilder.Protocol.BINARY);
         List<InetSocketAddress> addresses = AddrUtil.getAddresses(HOST + ":" + PORT);
@@ -25,17 +28,25 @@ public class HelloMemcached {
     }
 
     void run() {
-        // creating an object in memcached
-        Message msg = new Message("1", "Hello Memcached!");
-        mc.set(msg.getId(), NO_EXPIRATION, msg);
+        // sending TOTAL_MESSAGES messages
+        List<String> keys = new LinkedList<String>();
+        for (int i = 0; i < TOTAL_MESSAGES; i++) {
+            Message msg = new Message((i + 1) + "", "Message #" + (i + 1));
+            mc.set(msg.getId(), NO_EXPIRATION, msg);
+            keys.add(msg.getId());
+        }
 
-        // read the object
-        msg = (Message) mc.get("1");
-        System.out.println(msg);
+        // reading and delete all messages
+        Map<String, Object> msgs = mc.getBulk(keys);
+        for (String key: msgs.keySet()) {
+            Message msg = (Message) msgs.get(key);
+            System.out.println(msg);
+            mc.delete(msg.getId());
+        }
     }
 
     public static void main(String[] args) throws IOException {
-        HelloMemcached helloMc = new HelloMemcached();
-        helloMc.run();
+        BulkRead bulkRead = new BulkRead();
+        bulkRead.run();
     }
 }
