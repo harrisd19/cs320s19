@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485fbee7-88fe-403f-a41a-b05462aaae79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hazelcast_demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazelcast_demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazelcast_demo/src/main/java/HelloHazelcast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jms_spaces_demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mcached_demo/src/main/java/BulkRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spaces_demo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hazelcast_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hazelcast_demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../mcached_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcached_demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mcached_demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcached_demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mcached_demo/src/main/java/HelloMemcached.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mcached_demo/src/main/java/HelloMemcached.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_auction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_auction/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spaces_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spaces_demo/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,8 +46,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="23" />
-    <option name="width" value="80" />
-    <option name="height" value="22" />
+    <option name="width" value="1131" />
+    <option name="height" value="847" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,10 +110,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="80" height="22" extended-state="0" />
+    <frame x="-1" y="23" width="1131" height="847" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="1.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39853075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />

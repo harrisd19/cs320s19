@@ -20,18 +20,24 @@ public class HelloMemcached {
     HelloMemcached() throws IOException {
         ConnectionFactoryBuilder builder = new ConnectionFactoryBuilder();
         builder.setProtocol(ConnectionFactoryBuilder.Protocol.BINARY);
-        List<InetSocketAddress> addresses = AddrUtil.getAddresses(HOST + ":" + PORT);
+        String addressesString = HOST + ":" + PORT;
+//        String addressesString = "localhost:9000,localhost:9001";
+        List<InetSocketAddress> addresses = AddrUtil.getAddresses(addressesString);
         mc = new MemcachedClient(builder.build(), addresses);
     }
 
     void run() {
-        // creating an object in memcached
-        Message msg = new Message("1", "Hello Memcached!");
-        mc.set(msg.getId(), NO_EXPIRATION, msg);
+//        // creating an object in memcached
+//        Message msg = new Message("1", "Message 1");
+//        // mc.set(msg.getId(), NO_EXPIRATION, msg);
+//
+//        // read the object
+//        msg = (Message) mc.get("1");
+//        System.out.println(msg);
 
-        // read the object
-        msg = (Message) mc.get("1");
-        System.out.println(msg);
+        mc.set("test", NO_EXPIRATION, "1");
+        mc.incr("test", 1);
+        System.out.println(mc.get("test"));
     }
 
     public static void main(String[] args) throws IOException {
